@@ -3,7 +3,7 @@
 
 Official implementation of  our ECCV2024 **[Enhancing Recipe Retrieval with Foundation Models: A Data Augmentation Perspective ](https://arxiv.org/abs/2312.04763)**
 
-![Project Banner](figs.png)
+![Project Banner](figs.jpg)
 
 ---
 Official repository for our paper on eccv2024. 
