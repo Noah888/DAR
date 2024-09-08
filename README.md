@@ -1,12 +1,9 @@
-# Enhancing Recipe Retrieval with Foundation Models: A Data Augmentation Perspective 
+# Enhancing Recipe Retrieval with Foundation Models
 
-![License](https://img.shields.io/github/license/your_username/your_repo.svg) 
-![Issues](https://img.shields.io/github/issues/your_username/your_repo.svg)
-![Stars](https://img.shields.io/github/stars/your_username/your_repo.svg)
 
-Official implementation of **[Enhancing Recipe Retrieval with Foundation Models: A Data Augmentation Perspective ](https://arxiv.org/abs/2312.04763)**
+Official implementation of  our ECCV2024 **[Enhancing Recipe Retrieval with Foundation Models: A Data Augmentation Perspective ](https://arxiv.org/abs/2312.04763)**
 
-![Project Banner](path_to_image/banner.png)
+![Project Banner](figs.png)
 
 ---
 Official repository for our paper on eccv2024. 
