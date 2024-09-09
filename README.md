@@ -32,5 +32,25 @@ pip install -r requirements.txt
 The main code has been uploaded first, the data as well as guidance will be updated soon.
 
 
+## Usage
+To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data (to be uploaded in the future). Place the data in the ```DATASET_PATH``` directory with the following structure:
+```bash
+DATASET_PATH/
+│
+├── train/
+│   ├── ...
+├── val/
+│   ├── ...
+└── test/
+│   ├── ...
+├── segment/
+│    ├── train/...
+│    ├── val/...
+│    ├── test/...
+└── layer1.json
+└── layer2.json
+
+
+
 
 
