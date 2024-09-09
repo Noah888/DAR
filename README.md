@@ -10,6 +10,18 @@ This paper proposes a new perspective on data augmentation using the Foundation 
 ![Project Banner](figs.jpg)
 
 ---
+
+## Installation
+
+To install the required packages, please follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/your_username/your_repo.git
+cd your_repo
+
+# Install dependencies
+pip install -r requirements.txt
 The main code has been uploaded first, the data as well as guidance will be updated soon.
 
 
