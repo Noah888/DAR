@@ -90,4 +90,5 @@ python test.py --model_name MODEL_NAME --eval_split test --root DATASET_PATH --s
 
 - A file with extracted features will be saved under ```../checkpoints/MODEL_NAME```.
 
+This code was developed based on the [image-to-recipe-transformers](https://github.com/amzn/image-to-recipe-transformers). We express our gratitude for their contribution.
 
