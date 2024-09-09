@@ -10,6 +10,7 @@ This paper proposes a new perspective on data augmentation using the Foundation 
 ![Project Banner](figs.jpg)
 
 ---
+## The main code has been uploaded first, the data as well as guidance will be updated soon.
 
 ## Installation
 
@@ -29,7 +30,7 @@ conda activate your_env_nam
 pip install -r requirements.txt
 ```
 
-The main code has been uploaded first, the data as well as guidance will be updated soon.
+
 
 
 ## Usage
