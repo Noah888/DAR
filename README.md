@@ -33,7 +33,7 @@ pip install -r requirements.txt
 
 
 
-## Usage
+## Dataset
 To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data (to be uploaded in the future). Place the data in the ```DATASET_PATH``` directory with the following structure:
 ```bash
 DATASET_PATH/
@@ -52,6 +52,38 @@ DATASET_PATH/
 └── layer2.json
 ```
 
+## Training
 
+- Launch training with:
+
+```
+python train.py --model_name model --root DATASET_PATH --save_dir /path/to/saved/model/checkpoints
+```
+
+Run ```python train.py --help``` for the full list of available arguments.
+
+## Evaluation
+
+- Extract features from the trained model for the test set samples of Recipe1M:
+
+```
+python test.py --model_name model --eval_split test --root DATASET_PATH --save_dir /path/to/saved/model/checkpoints
+```
+
+- Compute MedR and recall metrics for the extracted feature set:
+
+```
+python eval.py --embeddings_file /path/to/saved/model/checkpoints/model/feats_test.pkl --medr_N 10000
+```
+
+## Pretrained models
+
+- We provide pretrained model weights(coming soon):
+
+```
+python test.py --model_name MODEL_NAME --eval_split test --root DATASET_PATH --save_dir ../checkpoints
+```
+
+- A file with extracted features will be saved under ```../checkpoints/MODEL_NAME```.
 
 
