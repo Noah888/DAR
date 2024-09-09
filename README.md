@@ -21,10 +21,13 @@ git clone https://github.com/Noah888/DAR.git
 
 # Create a virtual environment (Python 3.8 or above)
 conda create --name your_env_name python=3.9
+
 # Activate the conda environment
 conda activate your_env_nam
+
 # Install dependencies
 pip install -r requirements.txt
+```
 
 The main code has been uploaded first, the data as well as guidance will be updated soon.
 
