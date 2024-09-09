@@ -71,18 +71,18 @@ python test.py --model_name model --eval_split test --root DATASET_PATH --save_d
 ```
 
 - Compute MedR and recall metrics for the extracted feature set:
-- Evaluation with only image and recipe feats(DAR):
+   Evaluation with only image and recipe feats(DAR):
 ```
 python eval.py --embeddings_file /path/to/saved/model/checkpoints/model/feats_test.pkl --medr_N 10000
 ```
-- Evaluation with raw image-recipe features as well as augment segments description features (DAR++):
+   Evaluation with raw image-recipe features as well as augment segments description features (DAR++):
 ```
 python eval_add_augment.py --embeddings_file /path/to/saved/model/checkpoints/model/feats_test.pkl --medr_N 10000
 ```
 
 ## Pretrained models
 
-- We provide pretrained model weights(coming soon):
+- We provide pretrained model weights (coming soon):
 
 ```
 python test.py --model_name MODEL_NAME --eval_split test --root DATASET_PATH --save_dir ../checkpoints
