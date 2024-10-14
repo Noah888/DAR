@@ -10,8 +10,6 @@ This paper proposes a new perspective on data augmentation using the Foundation 
 ![Project Banner](figs.jpg)
 
 ---
-## The main code has been uploaded first, the data as well as guidance will be updated soon.
-
 ## Installation
 
 To install the required packages, please follow these steps:
