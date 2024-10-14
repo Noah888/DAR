@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 
 ## Dataset
-To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data ( [traindata](https://drive.google.com/file/d/1mceOq99iyBJ3dG55TQTl983SOscDAK6a/view?usp=drive_link) (with augment visual imagination data)). Place the data in the ```DATASET_PATH``` directory with the following structure:
+To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data ( [traindata (add visual imagination data)](https://drive.google.com/file/d/1mceOq99iyBJ3dG55TQTl983SOscDAK6a/view?usp=drive_link) and [augment segment data](https://pan.baidu.com/s/1gugeBDXb1e2b4EjcEIkdAQ?pwd=beig). Place the data in the ```DATASET_PATH``` directory with the following structure:
 ```bash
 DATASET_PATH/
 │── traindata/
