@@ -80,7 +80,7 @@ python eval_add_augment.py --embeddings_file /path/to/saved/model/checkpoints/mo
 
 ## Pretrained models
 
-- We provide pretrained model weights ```[DAR_model](https://pan.baidu.com/s/1C7YaSdldTrZLjxM--Atb5g?pwd=p7id)```:
+- We provide pretrained model weights [DAR_model](https://pan.baidu.com/s/1C7YaSdldTrZLjxM--Atb5g?pwd=p7id):
 
 ```
 python test.py --model_name DAR_model --eval_split test --root DATASET_PATH --save_dir ../checkpoints
