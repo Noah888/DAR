@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 
 ## Dataset
-To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data ( [traindata (add visual imagination data)](https://drive.google.com/file/d/1mceOq99iyBJ3dG55TQTl983SOscDAK6a/view?usp=drive_link) and [segment data](https://pan.baidu.com/s/1gugeBDXb1e2b4EjcEIkdAQ?pwd=beig). Place the data in the ```DATASET_PATH``` directory with the following structure:
+To reproduce the results,  Download Recipe1M [dataset](http://wednesday.csail.mit.edu/temporal/release/) and Generate enhanced data ([traindata (add visual imagination data)](https://drive.google.com/file/d/1mceOq99iyBJ3dG55TQTl983SOscDAK6a/view?usp=drive_link) and [segment data](https://pan.baidu.com/s/1gugeBDXb1e2b4EjcEIkdAQ?pwd=beig)). Place the data in the ```DATASET_PATH``` directory with the following structure:
 ```bash
 DATASET_PATH/
 │── traindata/
@@ -80,13 +80,13 @@ python eval_add_augment.py --embeddings_file /path/to/saved/model/checkpoints/mo
 
 ## Pretrained models
 
-- We provide pretrained model weights (coming soon):
+- We provide pretrained model weights ```[DAR_model](https://pan.baidu.com/s/1C7YaSdldTrZLjxM--Atb5g?pwd=p7id)```:
 
 ```
-python test.py --model_name MODEL_NAME --eval_split test --root DATASET_PATH --save_dir ../checkpoints
+python test.py --model_name DAR_model --eval_split test --root DATASET_PATH --save_dir ../checkpoints
 ```
 
-- A file with extracted features will be saved under ```../checkpoints/MODEL_NAME```.
+- A file with extracted features will be saved under ```../checkpoints/DAR_model```.
 
 This code is based on the [image-to-recipe-transformers](https://github.com/amzn/image-to-recipe-transformers). We would like to express our gratitude.
 
