@@ -87,8 +87,7 @@ def trainIter(args, split, loader, model, optimizer,
             with torch.no_grad():
                 img_feat,sam_feat,recipe_feat, proj_feats,llama_feat= model(img,sam_img_whole, title, ingrs, instrs,llama_desc)
         else:
-            out = model(img,sam_img_whole, title, ingrs, instrs,llama_desc,
-                        freeze_backbone=args.freeze_backbone)
+            out = model(img,sam_img_whole, title, ingrs, instrs,llama_desc)
 
             img_feat,sam_feat,recipe_feat, proj_feats,llama_feat = out
 
