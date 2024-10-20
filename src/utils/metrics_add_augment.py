@@ -9,7 +9,7 @@ from sklearn.metrics import pairwise_distances
 
 
 def compute_metrics(queries, database, llama_feats,sam_feats,metric='cosine',
-                    recall_klist=(1, 5, 10), return_raw=False, retrieval_mode="image2recipe"):
+                    recall_klist=(1, 5, 10), retrieval_mode="image2recipe", return_raw=False):
     """Function to compute Median Rank and Recall@k metrics given two sets of
        aligned embeddings.
 
