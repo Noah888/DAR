@@ -435,7 +435,6 @@ class JointEmbedding(nn.Module):
 def get_model(args):
     model = JointEmbedding(output_size=args.output_size,
                            hidden_recipe=args.hidden_recipe,
-                           image_model=args.backbone,
                            n_heads=args.tf_n_heads,
                            n_layers=args.tf_n_layers,
                            )
