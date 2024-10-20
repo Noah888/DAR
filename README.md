@@ -26,6 +26,8 @@ conda activate your_env_nam
 
 # Install dependencies
 pip install -r requirements.txt
+
+cd src
 ```
 
 
