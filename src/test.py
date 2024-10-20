@@ -37,8 +37,7 @@ def test(args):
                                  drop_last=False)
     print("Extracting features for %d samples from the %s set..."%(len(dataset),
                                                                    args.eval_split))
-    vocab_size = len(dataset.get_vocab())
-    model = get_model(args, vocab_size)
+    model = get_model(args)
 
     print("recipe encoder", count_parameters(model.text_encoder))
     print("image encoder", count_parameters(model.image_encoder))
