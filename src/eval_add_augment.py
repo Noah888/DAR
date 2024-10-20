@@ -11,7 +11,7 @@ from utils.metrics_add_augment import compute_metrics
 import argparse
 
 import pickle
-def computeAverageMetrics(imfeats, recipefeats,llama_feats,sam_feats,k, t, forceorder=False):
+def computeAverageMetrics(imfeats, recipefeats,llama_feats,sam_feats,k, t, retrieval_mode,forceorder=False):
     """Computes retrieval metrics for two sets of features
 
     Parameters
@@ -51,7 +51,7 @@ def computeAverageMetrics(imfeats, recipefeats,llama_feats,sam_feats,k, t, force
         sam_sub  = sam_feats[sub_ids, :]
         
         metrics= compute_metrics(imfeats_sub, recipefeats_sub,llama_sub,sam_sub,
-                                  recall_klist=(1, 5, 10))
+                                  recall_klist=(1, 5, 10), retrieval_mode = retrieval_mode)
       
 
         for metric_name, metric_value in metrics.items():
