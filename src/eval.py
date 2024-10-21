@@ -11,7 +11,7 @@ from utils.metrics import compute_metrics
 import argparse
 
 
-def computeAverageMetrics(imfeats, recipefeats,help_feats,k, t, forceorder=False):
+def computeAverageMetrics(imfeats, recipefeats,k, t, forceorder=False):
     """Computes retrieval metrics for two sets of features
 
     Parameters
@@ -47,8 +47,7 @@ def computeAverageMetrics(imfeats, recipefeats,help_feats,k, t, forceorder=False
             sub_ids = random.sample(range(0, len(imfeats)), k)
         imfeats_sub = imfeats[sub_ids, :]
         recipefeats_sub = recipefeats[sub_ids, :]
-        help_sub  = help_feats[sub_ids, :]
-        metrics = compute_metrics(imfeats_sub, recipefeats_sub,help_sub,
+        metrics = compute_metrics(imfeats_sub, recipefeats_sub,
                                   recall_klist=(1, 5, 10))
 
         for metric_name, metric_value in metrics.items():
