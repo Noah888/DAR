@@ -1,5 +1,4 @@
 adapter_transformers==3.2.1
-builder==0.1.0
 calflops==0.3.2
 einops==0.8.0
 langchain==0.2.16
